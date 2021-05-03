@@ -28,7 +28,6 @@ export default class SnakeScreen extends React.Component {
     ],
     food: randomFood(),
     direction: 'PLAY',
-    // status: 'READY',
     speed: 300,
     curScore: 1,
     highestScore: 0
@@ -149,27 +148,7 @@ export default class SnakeScreen extends React.Component {
   }
 
   render() {
-    const { snakeDots, food, direction, status } = this.state
-      // if(status == "READY") {
-      //   return (
-      //     <View style={styles.container} >
-      //       <Text>Select Mode</Text>
-      //       <View>
-      //         <TouchableOpacity onPress={() => this.setState({ speed: 1000, status: "START"})} >
-      //           <Text>EASY</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity onPress={() => this.setState({ speed: 300, status: "START"})}>
-      //           <Text>NORMAL</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity onPress={() => this.setState({ speed:  1, status: "START"})} >
-      //           <Text>HARD</Text>
-      //         </TouchableOpacity>
-      //       </View>
-      //     </View>
-      //     )
-      // } else {
+    const { snakeDots, food, direction } = this.state
         return (
           <View style={styles.container}>
             <View style={styles.gameArea}>
@@ -207,7 +186,6 @@ export default class SnakeScreen extends React.Component {
             </View>
           </View>
         )
-      // }
   }
 }
 
