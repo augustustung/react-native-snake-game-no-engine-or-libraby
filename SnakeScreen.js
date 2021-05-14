@@ -7,8 +7,8 @@ import {
   Text,
 } from 'react-native'
 import { Audio } from 'expo-av';
-import Snake from './snake'
-import Food from './food'
+import Snake from './components/snake'
+import Food from './components/food'
 
 const GRID_SIZE = 15
 const CELL_SIZE = 20
